@@ -82,3 +82,44 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-zinc-600
   }
+
+  .fc-timegrid-slot-label {
+    @apply flex items-center justify-center text-sm text-zinc-600 font-semibold
+  }
+
+  .fc-timegrid-slot {
+    @apply !h-9 !min-w-16 !border-r-0 !border-l-0 
+  }
+
+  .today-day {
+    @apply !text-blue-500
+  }
+
+  .fc-day-today {
+    @apply !bg-transparent
+  }
+
+  .fc .fc-view-harness {
+    height: 100% !important;
+    min-height: 800px !important;
+  }
+
+/* Remove a borda das linhas de 30 minutos */
+/* .fc-timegrid-slot.fc-timegrid-slot-minor {
+  border: none !important;
+  background: none !important;
+} */
+
+/* Remove o espaçamento ou margens extras entre as linhas */
+/* .fc-timegrid-slot-lane.fc-timegrid-slot-minor {
+  border-top: none !important;
+} */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}

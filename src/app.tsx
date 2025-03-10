@@ -11,10 +11,7 @@ export function App() {
   return (
     <HelmetProvider>
       <Helmet titleTemplate="%s | Template Nitro HUB Frontend" />
-      <ThemeProvider
-        storageKey="template-nitro-hub-frontend"
-        defaultTheme="dark"
-      >
+      <ThemeProvider defaultTheme="light" storageKey="fullcalendar-demo">
         <QueryClientProvider client={queryClient}>
           <RouterProvider router={router} />
 
